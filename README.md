@@ -30,7 +30,6 @@
 If you have any question or contributions, please email me at:
     <hr>
     <br>
-    <br>
     > omaribinbakarivic@gmail.com <br>
     > aokomercyline34@gmail.com <br>
     > fridah.namudu@gmail.com <br>
