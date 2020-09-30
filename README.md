@@ -1,10 +1,11 @@
 # Book-A-Meal
 ## Authors
-    1. Omar Hussein
-    2. Aoko Mercyline
-    3. Fridah Namudu
-    4. Charles Osango
-    5. Virsail
+    <br>
+    1. Omar Hussein <br>
+    2. Aoko Mercyline <br>
+    3. Fridah Namudu <br>
+    4. Charles Osango <br>
+    5. Virsail <br>
     6. Joseph Odhiambo
 
 # Description
