@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book-A-Meal</title>
-</head>
-<body>
-  
-</body>
-</html>
+{% extends 'base.html'%}
+
+{% block content %}
+    <div class="container landing">
+        <div class="row ">
+                <!-- {% if current_user.is_authenticated %}
+                <div class="col-md-3 "><a class="btn btn-sm btn-info " id="ref" href="{{url_for('main.new_blog')}}">Post</a></div>
+                {% endif %} -->
+            
+            <div class="col-md-9 "><h1 >Welcome to Book-A-Meal Express</h1></div>
+        </div>
+
+        
+    </div>
+
+{% endblock %}
