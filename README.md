@@ -37,5 +37,5 @@ If you have any question or contributions, please email the contacts below:
     > josephkdo@gmail.com <br>
 
 ## License
-* (*MIT License:*)[LICENSE]
+* (*MIT License:*)
 * Copyright (c) 2020 **Book-A-Meal**
