@@ -27,9 +27,8 @@
 ## Known Bugs
 
 ## Contact Information 
-If you have any question or contributions, please email me at:
+If you have any question or contributions, please email the contacts below:
     <hr>
-    <br>
     > omaribinbakarivic@gmail.com <br>
     > aokomercyline34@gmail.com <br>
     > fridah.namudu@gmail.com <br>
