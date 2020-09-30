@@ -1,11 +1,10 @@
 # Book-A-Meal
 ## Authors
-    <br>
-    1. Omar Hussein <br>
-    2. Aoko Mercyline <br>
-    3. Fridah Namudu <br>
-    4. Charles Osango <br>
-    5. Virsail <br>
+    1. Omar Hussein
+    2. Aoko Mercyline
+    3. Fridah Namudu
+    4. Charles Osango
+    5. Virsail
     6. Joseph Odhiambo
 
 # Description
@@ -29,12 +28,13 @@
 
 ## Contact Information 
 If you have any question or contributions, please email me at:
-    > omaribinbakarivic@gmail.com
-    > aokomercyline34@gmail.com
-    > fridah.namudu@gmail.com
-    > charlesosango02@gmail.com
-    > virsaileric@gmail.com
-    > josephkdo@gmail.com
+    <br>
+    > omaribinbakarivic@gmail.com <br>
+    > aokomercyline34@gmail.com <br>
+    > fridah.namudu@gmail.com <br>
+    > charlesosango02@gmail.com <br>
+    > virsaileric@gmail.com <br>
+    > josephkdo@gmail.com <br>
 
 ## License
 * *MIT License:*
