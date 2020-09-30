@@ -30,4 +30,31 @@
 				<li><a href="#">Hi Caterer</a></li>
 			</ul>
 		</div>
-	</nav> 
+    </nav> 
+    
+
+	<div class="content">
+		<div style="display: flex; width: 100%; flex-direction: column;">
+			
+		<h3 class="page-title">Order History</h3>
+		<div class="filters">
+			<label for="order-date">Order date:
+				<input class="filter-field" type="date" id="order-date">
+			</label>
+			<div class="other-filters" >
+				<label for="meals">Meal:
+					<select  class="filter-field" id="meals">
+						<option>Pepper Soup</option>
+					</select>
+				</label>
+				<label for="customer-name">Customer Name:
+					<input type="text" name="" id="customer-name" class="filter-field">
+				</label>
+			</div>
+			<div class="order-filter-btns">
+			<button class="btn other-filters-btn">more filters</button>
+			<button class="btn search" >Search</button>
+		</div>
+		</div>
+		
+	</div>
