@@ -12,9 +12,9 @@
 ## Live Link
 
 ## Screenshots
-<img src="" width="900px" height="440px">
-<img src="" width="900px" height="440px">
-<img src="" width="900px" height="440px">
+<img src="" width="800px" height="340px">
+<img src="" width="800px" height="340px">
+<img src="" width="800px" height="340px">
 
 ## Usage Story
 * Through this website, users can register and subsequently login to place orders from Admins. <br>
