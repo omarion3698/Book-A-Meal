@@ -12,9 +12,13 @@
 ## Live Link
 
 ## Screenshots
-
-## User Story
-
+    <img src="" width="900px" height="440px">
+    <img src="" width="900px" height="440px">
+    <img src="" width="900px" height="440px">
+## Usage Story
+ * Through this website, users can register and subsequently login to place orders from Admins. <br>
+    * Admin can be registered on the website. <br> 
+    * The Admin can edit their restuarant's menu (change price, add/delete items ) at any time. <br>* Admin can also accept/reject orders. <br>
 ## BDD
 
 ## Development Installation
