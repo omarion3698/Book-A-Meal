@@ -1,6 +1,6 @@
-from flask import Flask
+from flask import Flask, current_app
 # from instance.config import app_config
-from user_profile.models import User
+from app.models import User
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from config import config_options
