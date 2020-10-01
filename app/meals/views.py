@@ -110,7 +110,7 @@ class MealView(MethodView):
             return self.error.internal_server_error('Error occurred {}'.format(e))
 
 
-#  define the meals class-based view
+# define the meals class-based view
 meals_view = MealsView.as_view('meals_view')
 meal_view = MealView.as_view('meal_view')
 
