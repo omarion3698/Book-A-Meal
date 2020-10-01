@@ -1,8 +1,6 @@
 import urllib.request,json
 from .models import meal
 
-
-
 # Getting api key
 api_key = None
 
@@ -13,10 +11,6 @@ def configure_request(app):
     global api_key,base_url
     api_key = app.config['MEAL_API_KEY']
     base_url = app.config['MEAL_API_BASE_URL']
-
-
-
-
 
 
 def get_meals(category):
@@ -58,8 +52,6 @@ def get_meal(id):
             meal_object = meal(id,title,overview,poster,vote_average,vote_count)
 
     return meal_object
-
-
 
 def search_meal(meal_name):
     search_meal_url = 'https://api.themealdb.org/3/search/meal?api_key={}&query={}'.format(api_key,meal_name)

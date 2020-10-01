@@ -1,6 +1,5 @@
 from flask import render_template,request,redirect,url_for,abort,flash
 from . import main
-# from ..requests import get_quotes
 from flask_login import login_required
 from .forms import UpdateProfile
 from ..models import User,Role,PhotoProfile
@@ -22,7 +21,6 @@ def profile(uname):
         abort(404)
 
     return render_template("profile/profile.html", user = user)
-
 
 @main.route('/user/<uname>/update',methods = ['GET','POST'])
 @login_required
