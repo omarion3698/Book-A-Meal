@@ -27,33 +27,7 @@ def test():
 def make_shell_context():
     return dict(app = app,db = db,User = User)
 
+
+
 if __name__ == '__main__':
     manager.run()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import os
-# from app import create_app
-
-# config_name = os.environ.get('APP_SETTINGS')
-# app = create_app(config_name)
-
-
-# if __name__ == '__main__':
-#     port = int(os.environ.get('PORT', 5000))
-#     app.manager('', port=port)

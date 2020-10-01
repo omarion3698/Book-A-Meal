@@ -9,9 +9,7 @@ class SignupForm(FlaskForm):
     password = PasswordField("Password", validators=[DataRequired("Please enter your password"), Length(min=6,message="Passwords must be at least 6 characters in length.")])   
     submit = SubmitField("Sign Up")
 
-
-class LoginForm(FlaskForm): 
-
+class LoginForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired("Please enter your email address.")])    
     password = PasswordField("Password", validators=[DataRequired("Please enter a password.")])   
     submit = SubmitField("Sign In")
@@ -19,5 +17,7 @@ class LoginForm(FlaskForm):
 class OrderForm(FlaskForm):    
     meal = StringField("What type of meal would you like?", validators=[DataRequired("Please enter a meal.")])    
     time = FormField(TimeForm)    now_or_later = SelectField("Do you want your meal now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])    delivery = SelectField("Would you like your pizza delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])    submit = SubmitField("Place Order")
-
-
+    
+class UpdateProfile(FlaskForm):
+    bio = TextAreaField('Tell us about you.',validators = [Required()])
+    submit = SubmitField('Submit')
