@@ -8,7 +8,6 @@ from .. import db,photos
 from flask_login import login_required, current_user
 import markdown2
 
-
 @main.route('/')
 def index():
 
@@ -57,4 +56,3 @@ def update_pic(uname):
         user_photo = PhotoProfile(pic_path = path,user = user)
         db.session.commit()
     return redirect(url_for('main.profile',uname=uname))
-
