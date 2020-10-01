@@ -36,6 +36,11 @@ def create_app(config_name):
     from .main import main as main_blueprint
     from .orders import orders_blueprint
     from .menu import menu_blueprint
+
+    adm = Admin(app,name='flaskadmin')
+    from .models import User
+    adm.add_view(ModelView(User, db.session))
+
     app.register_blueprint(auth_blueprint)
     app.register_blueprint(main_blueprint)
     app.register_blueprint(meals_blueprint)

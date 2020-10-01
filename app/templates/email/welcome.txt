@@ -1,0 +1,2 @@
+Hello {{user.username}}, Welcome to Royal Foods.
+You have joined a great meal delivery platform, where you book a meal and receive it at your recomended time set.

@@ -1,5 +1,5 @@
 import urllib.request,json
-from .models import meal
+from ..models import meal
 
 # Getting api key
 api_key = None
