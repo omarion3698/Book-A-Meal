@@ -9,7 +9,6 @@ import markdown2
 
 @main.route('/')
 def index():
-
     return render_template("index.html")
 
 @main.route('/user/<uname>')
@@ -53,4 +52,5 @@ def update_pic(uname):
         user.profile_pic_path = path
         user_photo = PhotoProfile(pic_path = path,user = user)
         db.session.commit()
+        
     return redirect(url_for('main.profile',uname=uname))

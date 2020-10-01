@@ -68,9 +68,6 @@ def search_meal(meal_name):
 
     return search_meal_results
 
-
-
-
 def process_results(meal_list):
     '''
     Function  that processes the meal result and transform them to a list of Objects

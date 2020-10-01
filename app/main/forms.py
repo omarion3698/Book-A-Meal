@@ -22,10 +22,10 @@ class UpdateProfile(FlaskForm):
             if User.query.filter_by(username = username.data).first():
                 raise ValidationError("The username has already been taken")
 
-class SelectFavMeal(FlaskForm):
-    # title = StringField('Title',validators=[Required()])
-    # content = TextAreaField('Blog Content',validators=[Required()])
-    # submit = SubmitField('Post')
+# class SelectFavMeal(FlaskForm):
+#     title = StringField('Title',validators=[Required()])
+#     content = TextAreaField('Blog Content',validators=[Required()])
+#     submit = SubmitField('Post')
     
 class SignupForm(FlaskForm): 
     first_name = StringField("First Name", validators=[DataRequired("Please enter your First Name.")])    
@@ -41,5 +41,4 @@ class LoginForm(FlaskForm):
 
 class OrderForm(FlaskForm):    
     meal = StringField("What type of meal would you like?", validators=[DataRequired("Please enter a meal.")])    
-    time = FormField(TimeForm)    now_or_later = SelectField("Do you want your meal now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])    delivery = SelectField("Would you like your pizza delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])    submit = SubmitField("Place Order")
-
+    time = FormField(TimeForm)    now_or_later = SelectField("Do you want your meal now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])    delivery = SelectField("Would you like your pizza delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])   submit = SubmitField("Place Order")
