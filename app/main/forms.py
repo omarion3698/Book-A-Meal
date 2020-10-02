@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField,FileAllowed
-from wtforms import StringField,TextAreaField, SubmitField,ValidationError,PasswordField,FormField
+from wtforms import StringField,TextAreaField, SubmitField,ValidationError,PasswordField,FormField,TimeField, SelectField
 from wtforms.validators import Required,Email,DataRequired,Length
 from flask_login import current_user
 from ..models import User
@@ -41,7 +41,8 @@ class LoginForm(FlaskForm):
 
 class OrderForm(FlaskForm):    
     meal = StringField("What type of meal would you like?", validators=[DataRequired("Please enter a meal.")]) 
-    time = FormField(TimeForm)
+    time = FormField(TimeField)
     now_or_later = SelectField("Do you want your meal now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])    
     delivery = SelectField("Would you like your food delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])   
     submit = SubmitField("Place Order")
+  

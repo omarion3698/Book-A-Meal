@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/home/omarion/Desktop/Book-Meal/flask'
+VIRTUAL_ENV='/home/moringa/Desktop/Book-A-Meal/flask'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
