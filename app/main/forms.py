@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField,FileAllowed
-from wtforms import StringField,TextAreaField, SubmitField,ValidationError
-from wtforms.validators import Required,Email
+from wtforms import StringField,TextAreaField, SubmitField,ValidationError,PasswordField,FormField
+from wtforms.validators import Required,Email,DataRequired,Length
 from flask_login import current_user
 from ..models import User
 
@@ -29,7 +29,7 @@ class UpdateProfile(FlaskForm):
     
 class SignupForm(FlaskForm): 
     first_name = StringField("First Name", validators=[DataRequired("Please enter your First Name.")])    
-    last_name = StringField("Last Name", validators=[DataRequired("Please enter your Last Name")])    
+    last_name = StringField("Last Name", validators=[DataRequired("Please enter your Last Name.")])    
     email = StringField("Email", validators=[DataRequired("Please enter your email address."), Email("Pelase enter a valid email. name@host.com")])   
     password = PasswordField("Password", validators=[DataRequired("Please enter your password"), Length(min=6,message="Passwords must be at least 6 characters in length.")])   
     submit = SubmitField("Sign Up")
@@ -40,5 +40,8 @@ class LoginForm(FlaskForm):
     submit = SubmitField("Sign In")
 
 class OrderForm(FlaskForm):    
-    meal = StringField("What type of meal would you like?", validators=[DataRequired("Please enter a meal.")])    
-    time = FormField(TimeForm)    now_or_later = SelectField("Do you want your meal now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])    delivery = SelectField("Would you like your pizza delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])   submit = SubmitField("Place Order")
+    meal = StringField("What type of meal would you like?", validators=[DataRequired("Please enter a meal.")]) 
+    time = FormField(TimeForm)
+    now_or_later = SelectField("Do you want your meal now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])    
+    delivery = SelectField("Would you like your food delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])   
+    submit = SubmitField("Place Order")

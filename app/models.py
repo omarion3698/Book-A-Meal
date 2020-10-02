@@ -51,9 +51,6 @@ class Role(db.Model):
     def __repr__(self):
         return f'User {self.name}'
 
-
-
-
 # import os
 # from flask_bcrypt import Bcrypt
 # from flask import current_app
@@ -75,7 +72,10 @@ class Role(db.Model):
 #     def is_password_valid(self, password):        
 #     """Compare password with the harsh to check validity"""        
 #     return Bcrypt().check_password_hash(self.password, password)
-#     def generate_token(self, user_id):        """Generate an access token required to log in user"""        try:            # create a payload to be used in generating token
+#     def generate_token(self, user_id):        
+#       """Generate an access token required to log in user"""        
+# try:            
+# # create a payload to be used in generating token
 #             payload = {                'exp': datetime.utcnow() + timedelta(minutes=60),                'iat': datetime.utcnow(),                'sub': user_id            }
 #             # generate a jwt encoded string            jwt_string = jwt.encode(                payload,                os.environ['SECRET'],                algorithm='HS256'            )            return jwt_string        except Exception as e:            # import pdb; pdb.set_trace()            return str(e)
 #     @staticmethod    def decode_token(token):        """A method to decode access token from header"""        try:            # decode the token using the SECRET            payload = jwt.decode(token, os.environ['SECRET'])            return payload['sub']        except jwt.ExpiredSignatureError:            # if the token is expired, return an error string            return "Expired token. Please login to get a new token"        except jwt.InvalidTokenError:            # the token is invalid, return an error string            return "Invalid token. Please register or login"
